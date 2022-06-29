@@ -6,266 +6,297 @@
   color: hsl(228, 45%, 44%);
 }
 :root {
-    --transition: all 0.5s ease-in-out;
+  --transition: all 0.5s ease-in-out;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* light mode */
 body {
-    background-color: white;
-    font-family: 'Inter', sans-serif;
-    transition: var(--transition);
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  transition: var(--transition);
+}
+.top-bg {
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  height: 35%;
+  background-color: hsl(225, 100%, 98%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: var(--transition);
 }
 .main {
-    min-height: 100vh;
-    padding: 2rem;
+  min-height: 100vh;
+  padding: 2rem;
 }
 .header h1 {
-    color: hsl(230, 17%, 14%);
-    padding-bottom: 0.5rem;
-    transition: var(--transition);;
+  color: hsl(230, 17%, 14%);
+  padding-bottom: 0.5rem;
+  transition: var(--transition);
 }
 .header h3 {
-    color: hsl(228, 12%, 44%);
-    padding-bottom: 1.3rem;
+  color: hsl(228, 12%, 44%);
+  padding-bottom: 1.3rem;
 }
-.toggle-bar  {
-    padding: 1.5rem 0 3rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.toggle-bar {
+  padding: 1.5rem 0 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .toggle-bar h3 {
-    color: hsl(228, 12%, 44%);
+  color: hsl(228, 12%, 44%);
 }
 .toggle-btn {
-    background-color: hsl(230, 22%, 74%);
-    border: none;
-    border-radius: 15px;
-    position: relative;
-    width: 3.8rem;
-    height: 1.9rem;
-    cursor: pointer;
+  background-color: hsl(230, 22%, 74%);
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  width: 3.8rem;
+  height: 1.9rem;
+  cursor: pointer;
 }
 .toggle-btn:hover {
-    background: linear-gradient( to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
-    transition: var(--transition);
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  transition: var(--transition);
 }
 .switch {
-    position: absolute;
-    background-color: white;
-    width: 40%;
-    height: 75%;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 4px;
-    transition: var(--transition);;
+  position: absolute;
+  background-color: white;
+  width: 40%;
+  height: 75%;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4px;
+  transition: var(--transition);
 }
 
 .top-section {
-    display: grid;
-    place-items: center;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
+  display: grid;
+  place-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
 }
 .card {
-    background-color: hsl(227, 47%, 96%);
-    border-radius: 0 0 10px 10px;
-    display: grid;
-    place-items: center;
-    padding: 1rem 0;
-    width: 100%;
-    height: 15rem;
-    position: relative;
-    transition: var(--transition);
-
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  place-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  transition: var(--transition);
 }
 .card:hover {
-    background-color: hsla(228, 12%, 44%, 0.2);
-    cursor: pointer;
+  background-color: hsla(228, 12%, 44%, 0.2);
+  cursor: pointer;
 }
- .card .social-handle {
-    color: hsl(228, 12%, 44%);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
+.card .social-handle {
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
 .card .followers {
-    font-size: 4rem;
-    font-weight: 700;
-    color: hsl(230, 17%, 14%);
-    transition: var(--transition);
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(230, 17%, 14%);
+  transition: var(--transition);
 }
 .card .text {
-    color: hsl(228, 12%, 44%);
-    font-weight: 400;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  color: hsl(228, 12%, 44%);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .card .count {
-    display: flex;
-    align-items: center;
-    gap:  0.8rem;
-    font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.1rem;
 }
 .card .increase {
-    color: hsl(163, 72%, 41%);
-    font-weight: 700;
+  color: hsl(163, 72%, 41%);
+  font-weight: 700;
 }
 .card .decrease {
-    color: hsl(356, 69%, 56%);
-    font-weight: 700;
+  color: hsl(356, 69%, 56%);
+  font-weight: 700;
 }
 .card-top {
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    top: 0;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
 }
 .facebook {
-    background-color: hsl(208, 92%, 53%);
-   
+  background-color: hsl(208, 92%, 53%);
 }
 .twitter {
-   background-color:hsl(203, 89%, 53%);
+  background-color: hsl(203, 89%, 53%);
 }
 .instagram {
-    background: linear-gradient(to left, hsl(329, 70%, 58%), hsl(37, 97%, 70%));
+  background: linear-gradient(to left, hsl(329, 70%, 58%), hsl(37, 97%, 70%));
 }
 .youtube {
-    background-color:  hsl(348, 97%, 39%);;
+  background-color: hsl(348, 97%, 39%);
 }
 
 .overview {
-    color: hsl(228, 12%, 44%);
-    padding: 2rem 0;
-    font-size: 2rem;
-    transition: var(--transition);
+  color: hsl(228, 12%, 44%);
+  padding: 2rem 0;
+  font-size: 2rem;
+  transition: var(--transition);
 }
 
 .bottom-section {
-    display: grid;
-    place-items: center;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
+  display: grid;
+  place-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
 }
 .card2 {
-    background-color: hsl(227, 47%, 96%);
-    border-radius: 10px;
-    display: grid;
-    padding: 1rem 2rem;
-    width: 100%;
-    height: 8.5rem;
-    transition: var(--transition);
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 10px;
+  display: grid;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 8.5rem;
+  transition: var(--transition);
 }
 .card2:hover {
-    background-color: hsla(228, 12%, 44%, 0.2);
-    cursor: pointer;
+  background-color: hsla(228, 12%, 44%, 0.2);
+  cursor: pointer;
 }
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.flex:nth-child(1){
-    color: hsl(228, 12%, 44%);
-    font-size: 1.2rem;
-    font-weight: 700;
+.flex:nth-child(1) {
+  color: hsl(228, 12%, 44%);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .overview-count {
-    color: hsl(230, 17%, 14%);
-    font-weight: 700;
-    font-size: 2rem;
-    transition: var(--transition);
+  color: hsl(230, 17%, 14%);
+  font-weight: 700;
+  font-size: 2rem;
+  transition: var(--transition);
 }
 .percent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
 }
 .card2 .increase {
-    color: hsl(163, 72%, 41%);
-    font-weight: 700;
+  color: hsl(163, 72%, 41%);
+  font-weight: 700;
 }
 .card2 .decrease {
-    color: hsl(356, 69%, 56%);
+  color: hsl(356, 69%, 56%);
 }
 
 /* dark mode */
 .dark {
-    background-color: hsl(230, 17%, 14%);
-    transition: var(--transition);;
-}
-.dark .switch {
-    background-color: hsl(230, 17%, 14%); 
-    right: 50%;  
-    transition: var(--transition);;
-}
-.dark .toggle-btn {
-    background: linear-gradient( to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
-    transition: var(--transition);;
-}
-.dark .header h1 {
-    color: white;
-    transition: var(--transition);
-}
-.dark  .card {
-    background-color: hsl(228, 28%, 20%);
-    transition: var(--transition);
-}
-.dark .card:hover {
-    background-color:  hsla(228, 34%, 66%, 0.3);
-    cursor: pointer;
-}
-.dark .card .followers {
-    color: white;
-    transition: var(--transition);
-}
-.dark .overview {
-    color: white;
-    transition: var(--transition);;
-}
-.dark .card2 {
-    background-color: hsl(228, 28%, 20%);
-    transition: var(--transition);
-}.dark .card2:hover {
-    background-color:  hsla(228, 34%, 66%, 0.3);
-    cursor: pointer;
-}
-.dark .overview-count {
-    color: white;
-    transition: var(--transition);
+  background-color: hsl(230, 17%, 14%);
+  transition: var(--transition);
 }
 
-@media screen and (min-width: 968px){
-    .main {
-        padding: 2rem 6rem;
-    }
-    hr {
-        display: none;
-    }
-    .toggle-bar {
-        justify-content: center;
-        gap: 1rem;
-    }
-    .header-section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .top-section {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .bottom-section {
-        grid-template-columns: repeat(4, 1fr);
-    }
+.dark .switch {
+  background-color: hsl(230, 17%, 14%);
+  right: 50%;
+  transition: var(--transition);
+}
+.dark .toggle-btn {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  transition: var(--transition);
+}
+.dark .top-bg {
+    background-color: hsl(232, 19%, 15%);
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: var(--transition);
+}
+.dark .header h1 {
+  color: white;
+  transition: var(--transition);
+}
+.dark .card {
+  background-color: hsl(228, 28%, 20%);
+  transition: var(--transition);
+}
+.dark .card:hover {
+  background-color: hsla(228, 34%, 66%, 0.3);
+  cursor: pointer;
+}
+.dark .card .followers {
+  color: white;
+  transition: var(--transition);
+}
+.dark .overview {
+  color: white;
+  transition: var(--transition);
+}
+.dark .card2 {
+  background-color: hsl(228, 28%, 20%);
+  transition: var(--transition);
+}
+.dark .card2:hover {
+  background-color: hsla(228, 34%, 66%, 0.3);
+  cursor: pointer;
+}
+.dark .overview-count {
+  color: white;
+  transition: var(--transition);
+}
+@media screen and (min-width: 650px) {
+  .top-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  .bottom-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 968px) {
+  .main {
+    padding: 2rem 6rem;
+  }
+  hr {
+    display: none;
+  }
+  .toggle-bar {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  .bottom-section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
 }
